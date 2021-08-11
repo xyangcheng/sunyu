@@ -23,32 +23,19 @@
 	<div id="mainDiv">
 		<div id="content">
 			<div id="code">
-				<span class="comments">/**</span><br />
-				<span class="space" /><span class="comments">*2016—01-01,</span><br />
-				<span class="space" /><span class="comments">*2016-07-26.</span><br />
-				<span class="space" /><span class="comments">*/</span><br />
-				Boy name = <span class="keyword">Mr</span> LI<br />
-				Girl name = <span class="keyword">Mrs</span> ZHANG<br />
-				<span class="comments">// Fall in love river. </span><br />
-				The boy love the girl;<br />
-				<span class="comments">// They love each other.</span><br />
-				The girl loved the boy;<br />
-				<span class="comments">// AS time goes on.</span><br />
-				The boy can not be separated the girl;<br />
-				<span class="comments">// At the same time.</span><br />
-				The girl can not be separated the boy;<br />
-				<span class="comments">// Both wind and snow all over the sky.</span><br />
-				<span class="comments">// Whether on foot or 5 kilometers.</span><br />
-				<span class="keyword">The boy</span> very <span class="keyword">happy</span>;<br />
-				<span class="keyword">The girl</span> is also very <span class="keyword">happy</span>;<br />
-				<span class="placeholder" /><span class="comments">// Whether it is right now</span><br />
-				<span class="placeholder" /><span class="comments">// Still in the distant future.</span><br />
-				<span class="placeholder" />The boy has but one dream;<br />
-				<span class="comments">// The boy wants the girl could well have been happy.</span><br />
+				<span class="space" /><span class="comments">1985—11-17,</span><br />
+				I was born, wondering, <br>
+				<span class="space" /><span class="comments">1989-08-12,</span><br />
+				Something important happened <br>
+				<span class="space" /><span class="comments">2021-05-06,</span><br />
+				we got to know each other <br>
+				<span class="space" /><span class="comments">2021-07-14,</span><br />
+				we met first time ever<br />
+
+				<span class="comments">I only have 10 billion words I want to share with you only,</span><br />
 				<br>
-				<br>
-				I want to say:<br />
-				Baby, I love you forever;<br />
+				but today, it's simple,<br />
+				<span class="keyword">Happy Birthday<br /></span>
 			</div>
 			<div id="loveHeart">
 				<canvas id="garden"></canvas>
@@ -58,7 +45,7 @@
 						<div id="elapseClock"></div>
 					</div>
 					<div id="loveu">
-						Happy Birthday<br />
+						and from now<br />
 						<div class="signature">- your Earth</div>
 					</div>
 				</div>
@@ -71,12 +58,8 @@
 	<script type="text/javascript">
 		var offsetX = $("#loveHeart").width() / 2;
 		var offsetY = $("#loveHeart").height() / 2 - 55;
-		var together = new Date();
-		together.setFullYear(2016, 1, 1);
-		together.setHours(0);
-		together.setMinutes(0);
-		together.setSeconds(0);
-		together.setMilliseconds(0);
+		var together = new Date("2021-05-16T10:52:00.000+08:00");
+
 
 		if (!document.createElement('canvas').getContext) {
 			var msg = document.createElement("div");
@@ -89,8 +72,9 @@
 			document.execCommand("stop");
 		} else {
 			setTimeout(function () {
+				$("#code").hide()
 				startHeartAnimation();
-			}, 5000);
+			}, 25000);
 
 			timeElapse(together);
 			setInterval(function () {
